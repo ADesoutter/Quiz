@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz">
+        <div id="welcomescreen" class="welcomescreen">
+            <h1 class="quiz__maintitle">Bienvenue sur ce Quiz!</h1>
+            <p class="quiz__description">Il sera composé de
+                <span class="nbquestions">X</span>
+                 questions ... </p>
+            <button id="welcomebtn" class="quiz__btn">OK</button>
+        </div>
+
+        <div id="questionscreen" class="questionscreen">
+          
+        </div>
+
+        <div id="resultscreen" class="resultscreen">
+            <h2 class="quiz__subtitle">Résultats!</h2>
+            <p class="quiz__description">
+                <span id="nbcorrects"><strong>X</strong></span>
+            réponses sur <span class="nbquestions">X</span> correctes </p>
+        </div>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
