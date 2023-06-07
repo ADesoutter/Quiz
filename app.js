@@ -104,7 +104,8 @@ function Question(title, answers, answerCorrect) {
 
 let quiz = new Quiz();
 
-let question1 = new Question( "Que signifie HTTP", ["HyperText Transfer Protocol", "HyperTransfer Text Protocol", "HyperTranslate Text Protocol"], 1);
+let question1 = new Question( "Que signifie HTTP", 
+    ["HyperText Transfer Protocol", "HyperTransfer Text Protocol", "HyperTranslate Text Protocol"], 1);
 quiz.addQuestion(question1);
 
 let question2 = new Question("Que signifie RSS", 
@@ -117,8 +118,12 @@ let question3 = new Question("Qu'est ce qu'un octet?",
 quiz.addQuestion(question3);
 
 let question4 = new Question("Qu’est-ce que le phishing ?", 
-    ["2", "Une collecte frauduleuse d’informations personnelles via une usurpation d’identité", "La réponse D"], 2);
+    ["Des emails non sollicités qui envahissent une boite de réception", "Une collecte frauduleuse d’informations personnelles via une usurpation d’identité", "Une technique de piratage d'un smartphone"], 2);
 quiz.addQuestion(question4);
+
+let question5 = new Question("Comment savoir si un site est sécurisé ?", 
+    ["Un logo l'indique dans le bas de la page", "L'URL devient verte", "Un cadenas s’affiche à côté de l’adresse du site"], 3);
+quiz.addQuestion(question5);
 
 console.log(quiz);
 
