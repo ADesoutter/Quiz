@@ -89,7 +89,7 @@ function Question(title, answers, answerCorrect) {
             screenQuestion.textContent = '';
             quiz.indexCurrentQuestion++;
             quiz.showCurrentQuestion();
-        }, 1000);
+        }, 3000);
     }
 
     this.isCorrectAnswer = function(answerUser) {
